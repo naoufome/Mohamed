@@ -1,0 +1,74 @@
+.header {
+    background-color: black;
+    height: 100px;
+    
+    
+}
+
+body {
+    margin: 0;
+}
+
+img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo {
+    
+    text-align: center;
+    color: white;
+    max-width: 90%; /* Change width to max-width */
+    margin: 0 auto; /* Shorter margin definition */
+    height: 100px;
+    display: flex;
+    align-items: center; /* Center align vertically */
+    justify-content: center; /* Center align horizontally */
+}
+
+/* Company Description */
+.company-description {
+    font-family: Arial, sans-serif; /* Set the font family */
+    font-size: 16px; /* Set the font size */
+    line-height: 1.5; /* Set the line height */
+    color: #333; /* Set the text color */
+    margin-bottom: 20px; /* Add some margin to the bottom */
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  /* Motivational Quotes */
+  h2{
+    text-align: center;
+  }
+  .motivational-quotes {
+    font-family: Georgia, serif; /* Set a different font family for quotes */
+    font-size: 14px; /* Set the font size */
+    font-style: italic; /* Italicize the text */
+    color: #666; /* Set a slightly different text color */
+    margin-bottom: 20px; /* Add some margin to the bottom */
+    margin-left: 10px;
+    text-align: center;
+  }
+  
+  /* Quote styles */
+  .quote {
+    margin-bottom: 10px; /* Add some margin to separate quotes */
+  }
+
+
+/* Media Query for Phones */
+@media screen and (max-width: 768px) {
+    .logo {
+        max-width: 100%; /* Adjust max-width for responsiveness */
+    }
+
+    .company-description,
+    .motivational-quotes {
+        margin: 0 10px 20px; /* Adjust margin for responsiveness */
+        text-align: center;
+    }
+}
+
+
+  
