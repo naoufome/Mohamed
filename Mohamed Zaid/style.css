@@ -1,154 +1,100 @@
 .header {
-    background-color: black;
-    height: 100px;
-    
-    
+  background-color: black;
+  height: 100px;
 }
 
 body {
-    margin: 0;
-}
-
-img {
-    width: 100px;
-    height: 100px;
+  margin: 0;
 }
 
 .logo {
-    
-    text-align: center;
-    color: white;
-    max-width: 90%; /* Change width to max-width */
-    margin: 0 auto; /* Shorter margin definition */
-    height: 100px;
-    display: flex;
-    align-items: center; /* Center align vertically */
-    justify-content: center; /* Center align horizontally */
+  text-align: center;
+  color: white;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-/* Company Description */
+.logo img {
+  width: 80px; /* Adjust logo size */
+  height: auto; /* Maintain aspect ratio */
+}
+
 .company-description {
-    font-family: Arial, sans-serif; /* Set the font family */
-    font-size: 16px; /* Set the font size */
-    line-height: 1.5; /* Set the line height */
-    color: #333; /* Set the text color */
-    margin-bottom: 20px; /* Add some margin to the bottom */
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  /* Motivational Quotes */
-  h2{
-    text-align: center;
-  }
-  .motivational-quotes {
-    font-family: Georgia, serif; /* Set a different font family for quotes */
-    font-size: 14px; /* Set the font size */
-    font-style: italic; /* Italicize the text */
-    color: #666; /* Set a slightly different text color */
-    margin-bottom: 20px; /* Add some margin to the bottom */
-    margin-left: 10px;
-    text-align: center;
-  }
-  
-  /* Quote styles */
-  .quote {
-    margin-bottom: 10px; /* Add some margin to separate quotes */
-  }
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  margin: 20px 10px; /* Adjust margin for responsiveness */
+}
 
+.motivational-quotes {
+  font-family: Georgia, serif;
+  font-size: 14px;
+  font-style: italic;
+  color: #666;
+  margin: 20px 10px; /* Adjust margin for responsiveness */
+}
 
+#Container {
+  border: 1px solid black;
+  margin: 5% auto; /* Adjust margin for responsiveness */
+  max-width: 90%; /* Adjust max-width for responsiveness */
+  height: auto; /* Adjust height for responsiveness */
+  padding: 20px; /* Add padding for better spacing */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
 
-  h2{
-    
-    text-transform: uppercase;
-    padding-top: 3%;
-      
-  }
-  
+#Container > h2 {
+  text-align: center;
+}
 
-  #Container{
-    margin-right: auto;
-    margin-left: auto;
-    border: 1px solid black;
-    margin-top: 5%;
-    height: 400px;
-    width: 600px;
-    font-family: Arial, sans-serif;
-    
-    
-  }
-  #Container>h2{
-    
-    text-align: center;
-      
-  }
-  
-  form {
-    width: 300px;
-    border-radius: 5px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 7%;
-      
-  }
-  
-  .Frm {
-    width: 60%;
-    margin-right: auto;
-    margin-left: auto;
-  }
- 
-  
-  input[type="text"],
-  input[type="password"] {
-    width: calc(100% - 10px);
-    padding: 5px;
-    margin-bottom: 10px;
-    margin-top:10px ;
-    
-  }
-  
-  button {
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  #message {
-    margin-top: 10px;
-    text-align: center;
-    color: red;
-  }
+form {
+  width: 100%; /* Adjust form width for responsiveness */
+  max-width: 300px; /* Set maximum width */
+  margin: 0 auto; /* Center align */
+  border-radius: 5px;
+  padding: 7% 0; /* Adjust padding for responsiveness */
+  box-sizing: border-box; /* Include padding in width calculation */
+}
 
+.Frm {
+  width: 50%; /* Adjust form width for responsiveness */
+  margin: 0 auto; /* Center align */
+}
 
-    
+input[type="text"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box; /* Include padding in width calculation */
+}
 
+#message {
+  text-align: center;
+  color: red;
+}
 
 /* Media Query for Phones */
 @media screen and (max-width: 768px) {
-    .logo {
-        max-width: 100%; /* Adjust max-width for responsiveness */
-    }
+  .logo {
+      max-width: 100%;
+  }
 
-    .company-description,
-    .motivational-quotes {
-        margin: 0 10px 20px; /* Adjust margin for responsiveness */
-        text-align: center;
-    }
-    .Container {
+  .company-description,
+  .motivational-quotes {
+      margin: 20px; /* Adjust margin for responsiveness */
+  }
+
+  #Container {
       width: 90%;
       margin-top: 10%;
   }
 
   form {
-      width: 90%;
-      padding-top: 15%;
+      padding: 15% 0; /* Adjust padding for responsiveness */
   }
 }
-
-
-  
